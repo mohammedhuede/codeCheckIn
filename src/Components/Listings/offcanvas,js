@@ -1,0 +1,84 @@
+ {[false,].map((expand) => (
+        <Navbar key={expand} bg="light" className='sidebar-btn' expand={expand}>
+          <Navbar.Toggle className='fs-14 text-dark'>
+            Deavtivate Listing
+          </Navbar.Toggle>
+          <Navbar.Offcanvas
+            id={`offcanvasNavbar-expand-${expand}`}
+            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+            placement="end"
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                <div className='d-flex align-items-start'>
+                  <img src={"/images/sidebar-toggle-dr.svg"} />
+                  <div className='ml-16'>
+                    <Badge bg="secondary">Apollo Hospitals</Badge>
+                    <h4 className='mt-8 fs-18'>Dr. Vasant Dakwale</h4>
+                    <p className='fs-14 mt-16'>MBBS, MS</p>
+                    <p className='fs-14'>Neurosurgeon  •  16 yrs</p>
+                  </div>
+                </div>
+                <div className='sidebar-grey-block'>
+                  <p className='fs-10 text-grey'>Facilities Offered</p>
+                  <img src={"/images/listing-house-consult.svg"} />
+                  <img src={"/images/listing-video-consult.svg"} />
+                  <img src={"/images/listing-hospital-consult.svg"} />
+                  <img src={"/images/listing-phone-consult.svg"} />
+                </div>
+              </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <div className=''>
+                <hr
+                  style={{
+                    background: '#E4E7EC',
+                    color: '#E4E7EC',
+                    height: '1px',
+                    width: '100%',
+                    opacity: '1',
+                    margin: '0px',
+                  }}
+                />
+              </div>
+              <h2 className='fs-16 mt-24'>Overview</h2>
+              <p className='text-grey fs-14 mt-12'>
+                Dr. Vasant Dakwale is a senior most neurosurgeon in
+                Indore with experience of 40 year’s in this field.
+                <br /><br />
+                Dr. Dakwale Completed MBBS from Gandhi Medical College Bhopal in 1974 and Mch.
+                Neurosurgery from TN Medical College, Mumbai in 1982.  View More
+              </p>
+              <div className='mt-24'>
+                <hr
+                  style={{
+                    background: '#E4E7EC',
+                    color: '#E4E7EC',
+                    height: '1px',
+                    width: '100%',
+                    opacity: '1',
+                    margin: '0px',
+                  }}
+                />
+              </div>
+              <h2 className='fs-16 mt-24'>Treatments</h2>
+              <div className='mt-12'>
+                <Badge bg="light">Endoscopic Spine Surgery</Badge>
+                <Badge bg="light" className='ml-4'>Endoscopic Pituitary Surgery</Badge>
+                <Badge bg="light" className='ml-4'>Brain Hemorrhage</Badge>
+                <Badge bg="light" className='ml-4'>Head Injury</Badge>
+                <Badge bg="light" className='mt-4'>Endoscopic Pituitary Surgery</Badge>
+                <Badge bg="light" className='ml-4'>Lumbar & Cervical Dis prolapse Surgery</Badge>
+                <Badge bg="light" className='ml-4'>Stereotactic Surgery</Badge>
+                <Badge bg="light" className='mt-4'>Trigeminal Neulegia - Radio frequency Ablation</Badge>
+                <Badge bg="light" className='ml-4'>Spine Surgery</Badge>
+                <Badge bg="light" className='ml-4'>Brain Tumor Surgery</Badge>
+                <Badge bg="light" className='mt-4'>Decompression Micovascular</Badge>
+                <Badge bg="light" className='ml-4'>Spine tumor surgery</Badge>
+                <Badge bg="light" className='ml-4'>Cervical Spine Surgery</Badge>
+                <Badge bg="light" className='mt-4'>Pediatric Neurosurgery</Badge>
+              </div>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
+        </Navbar>
+      ))}
